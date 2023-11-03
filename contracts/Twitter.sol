@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
+import "@openzeppelin/contracts/access/Ownable.sol";
 pragma solidity ^0.8.0;
 
-contract Twitter {
+contract Twitter is Ownable {
 
     uint16 public MAX_TWEET_LENGTH = 280;
 
